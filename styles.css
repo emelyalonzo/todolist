@@ -1,8 +1,100 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    background-color: rgb(197, 197, 192);
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  background-color: rgb(197, 197, 192);
+  color: white;
+}
+
+.container {
+  margin: 30px auto;
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 5px 10px 23px -3px rgba(116, 116, 116, 0.6);
+  border-radius: 50px;
+}
+
+.title {
+  color: violet;
+  text-align: center;
+}
+.search {
+  margin: 0 auto;
+  width: 100%;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 15px 10px;
+  width: 400px;
+  outline: none;
+  border-radius: 15px;
+  border-color: rgb(226, 226, 220);
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 45%;
+  color: white;
+  font-family: fantasy;
+  font-size: 1.4rem;
+  outline: none;
+  background-color: rgb(196, 21, 143);
+}
+.btn-add:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+.li-container {
+  background-color: white;
+  width: 100%;
+  color: darkslategray;
+  margin-top: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+
+.empty {
+  color: darkslategrey;
 }
