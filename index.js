@@ -40,3 +40,32 @@ const addDeleteBtn = () => {
 
   return deleteBtn;
 };
+
+
+document.querySelector(".theme-btn-dark").addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(./images/DarkBackground.jpg)";
+  document.querySelector(".title").style.color = "lightgrey";
+  document.querySelector("li").style.color = "white";
+  document.querySelector("li").style.backgroundColor = "rgba(139, 137, 255, 0.015)";
+  document.querySelector("input").style.backgroundColor = "rgba(182, 182, 182, 0.247)";
+  document.querySelector("input").style.borderColor = "rgba(107, 107, 107, 0.163)";
+  document.querySelector("input").style.color = "rgb(255, 255, 255)";
+});
+document.querySelector(".theme-btn-blue").addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(./images/BlueBackground.jpg)";
+  document.querySelector(".title").style.color = "rgba(11, 11, 68, 0.651)";
+  document.querySelector("li").style.color = "white";
+  document.querySelector("li").style.backgroundColor = "rgba(89, 87, 201, 0.425)";
+  document.querySelector("input").style.backgroundColor = "rgba(112, 112, 112, 0.247)";
+  document.querySelector("input").style.borderColor = "rgba(255, 255, 255, 0.363)";
+  document.querySelector("input").style.color = "rgb(255, 255, 255)";
+});
+document.querySelector(".theme-btn-light").addEventListener("click", () => {
+  document.body.style.backgroundImage = "url(./images/LightBackground.jpg)";
+  document.querySelector(".title").style.color = "rgba(46, 46, 78, 0.651)";
+  document.querySelector("li").style.backgroundColor = "rgba(140, 138, 255, 0.425)";
+  document.querySelector("li").style.color = "white";
+  document.querySelector("input").style.backgroundColor = "rgba(126, 126, 126, 0.247)";
+  document.querySelector("input").style.borderColor = "rgba(255, 255, 255, 0.363)";
+  document.querySelector("input").style.color = "rgb(255, 255, 255)";
+});

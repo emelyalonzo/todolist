@@ -3,21 +3,73 @@ body {
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  background-color: rgb(197, 197, 192);
+  background-image: url("./images/DarkBackground.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   color: white;
+  min-height: 75vh;
 }
 
 .container {
-  margin: 30px auto;
-  width: 30%;
-  background-color: white;
+  margin: 100px auto;
+  width: 450px;
   padding: 30px;
-  box-shadow: 5px 10px 23px -3px rgba(116, 116, 116, 0.6);
-  border-radius: 50px;
+  /*Glassmorphism*/
+  background: rgba(255, 255, 255, 0.233);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  
+}
+
+.theme-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.theme-btns button{
+  border: none;
+  border-radius: 50%;
+  padding: 9px 9px 7px 9px;
+  margin: 0 5px;
+  box-shadow: 0 4px 22px 0 rgba( 31, 38, 135, 0.27 );
+  cursor:pointer;
+}
+
+.theme-btn-blue {
+  background-color: #c1c4ff;
+  color: blue;
+}
+
+.theme-btn-blue:hover {
+  background-color: #c1c4ff70;
+  color: blue;
+}
+
+.theme-btn-dark {
+  background-color: #000000;
+  color: white;
+}
+
+.theme-btn-dark:hover {
+  background-color: #00000079;
+  color: white;
+}
+
+.theme-btn-light {
+  background-color: #ffffff;
+  color: lightskyblue;
+}
+
+.theme-btn-light:hover {
+  background-color: #ffffff7e;
+  color: rgb(0, 153, 255);
 }
 
 .title {
-  color: violet;
+  color: lightgrey;
   text-align: center;
 }
 .search {
@@ -33,29 +85,34 @@ input {
   padding: 15px 10px;
   width: 400px;
   outline: none;
-  border-radius: 15px;
-  border-color: rgb(226, 226, 220);
+  border-radius: 10px;
+  border-color: rgba(107, 107, 107, 0.163);
+  border-width: 1px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(182, 182, 182, 0.247);
 }
 
 .btn-add {
-  padding: 5px 15px;
-  border: none;
-  border-radius: 45%;
+  padding: 8px 15px;
+  margin-left: 3px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.171);
+  border-radius: 10px;
   color: white;
   font-family: fantasy;
   font-size: 1.4rem;
   outline: none;
-  background-color: rgb(196, 21, 143);
+  background-color: rgba(21, 103, 255, 0.438);
 }
 .btn-add:hover {
   cursor: pointer;
-  background-color: darkcyan;
+  background-color: rgba(21, 103, 255, 0.76);
 }
 
 .li-container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
-  color: darkslategray;
   margin-top: 20px;
 }
 
@@ -65,24 +122,27 @@ ul {
 
 li {
   list-style: none;
-  background-color: lightblue;
+  background-color: rgba(89, 87, 201, 0.425);
   border-radius: 10px;
   margin-top: 15px;
   display: flex;
+  font-size: 1rem;
+  color: white;
 }
 li p {
   margin: 0;
   padding: 15px;
   width: 100%;
+  
 }
 
 .btn-delete {
   margin-left: auto;
   border: none;
-  background-color: #e31746;
+  background-color: #e3174771;
   color: white;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px 16px;
   outline: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -92,9 +152,10 @@ li p {
 
 .btn-delete:hover {
   cursor: pointer;
-  background-color: lightseagreen;
+  background-color: #e31747d5;
 }
 
 .empty {
-  color: darkslategrey;
+  margin-left: 3px;
+  color: white;
 }
